@@ -1,0 +1,304 @@
+.App {
+  text-align: center;
+  padding: 20px; /* Si es necesario, añade padding */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5px;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.product-view {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-view img {
+  max-width: 100%;
+  height: auto;
+}
+
+.landing-page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.landing-page h1 {
+  color: #333;
+}
+
+.landing-page p {
+  color: #555;
+  font-size: 18px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.book-item {
+  background: #8dbed8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  height: auto;
+  width: 150px;
+  text-align: center;
+}
+
+.book-item img {
+  max-width: 100px;
+  height: auto;
+}
+
+.detail-item {
+  flex: 2;
+  background: #799892;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  perspective: 8px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  height: 100vh;
+}
+
+.cart-item {
+  background: #8dbed8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 20px;
+  height: auto;
+  width: 125px;
+  text-align: center;
+}
+
+.cart-item img {
+  max-width: 80px;
+  height: auto;
+}
+
+.detail-item img {
+  max-width: 25%;
+  height: auto;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-item-controls button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item-controls button:hover {
+  background-color: #0056b3;
+}
+
+.cart-item-controls .quantity {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.check-item-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.check-item-controls button {
+  background-color: #3e3b78;
+  color: #fff;
+  border: none;
+  padding: 4px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.check-item-controls button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-list {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.book-list {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book-list input {
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.details {
+  flex: 2;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.details img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.details .info {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #70a5b4;
+  color: #fff;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
