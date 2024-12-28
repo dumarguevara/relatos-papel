@@ -5,8 +5,9 @@ import Home from "./Home";
 import Carrito from "./Carrito";
 import DetallesLibro from "./DetallesLibro";
 import Checkout from "./Checkout";
-import { CarritoProvider } from "./CarritoContext";
 import Header from "./Header";
+import Footer from "./Footer";
+import { CarritoProvider } from "./CarritoContext";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/detalles/:id" element={<DetallesLibro />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     </CarritoProvider>

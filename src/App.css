@@ -302,3 +302,28 @@ input {
 .header nav a:hover {
   text-decoration: underline;
 }
+
+/* src/styles.css */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
